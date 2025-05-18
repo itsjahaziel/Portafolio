@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Custom animation for gradient */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  animation: gradientBG 15s ease infinite;
+}
+
+/* Custom scrollbar for fun! */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #eee;
+}
+::-webkit-scrollbar-thumb {
+  background: #a5b4fc;
+  border-radius: 10px;
+}
+html.dark ::-webkit-scrollbar {
+  background: #22223a;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #6366f1;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+  background: #ece9f6;
+}
+body::-webkit-scrollbar-thumb {
+  background: #a78bfa;
+  border-radius: 6px;
+}
+html {
+  scroll-behavior: smooth;
+}
+html, body {
+  scroll-behavior: smooth;
+}
