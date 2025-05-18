@@ -5,21 +5,20 @@ import { useState } from "react";
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
-  // Handler for form submission
   function handleSubmit(e) {
-    setTimeout(() => setSubmitted(true), 100); // Show thank you message
+    setTimeout(() => setSubmitted(true), 100);
   }
 
   return (
     <motion.div
-      className="max-w-3xl mx-auto my-10 px-4 py-8 rounded-xl shadow bg-white/80 dark:bg-[#19202b]/80 backdrop-blur"
+      className="max-w-3xl mx-auto my-10 px-2 sm:px-4 py-8 rounded-xl shadow bg-white/80 dark:bg-[#19202b]/80 backdrop-blur"
       id="contact"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: true }}
+      initial={{ opacity: 0, y: 80, scale: 0.95 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ duration: 0.8, type: "spring", bounce: 0.65 }}
+      viewport={{ once: true, amount: 0.7 }}
     >
-      <h2 className="text-2xl md:text-3xl font-bold text-indigo-600 dark:text-indigo-300 mb-4">
+      <h2 className="text-2xl sm:text-3xl font-bold text-indigo-600 dark:text-indigo-300 mb-4">
         Contact
       </h2>
       {submitted ? (
@@ -48,21 +47,21 @@ export default function Contact() {
             name="name"
             required
             placeholder="Your Name"
-            className="p-4 rounded-lg border border-gray-300 dark:bg-[#161b22] dark:border-neutral-700 text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+            className="p-4 rounded-lg border border-gray-300 dark:bg-[#161b22] dark:border-neutral-700 text-base sm:text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
           />
           <input
             type="email"
             name="email"
             required
             placeholder="Your Email"
-            className="p-4 rounded-lg border border-gray-300 dark:bg-[#161b22] dark:border-neutral-700 text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+            className="p-4 rounded-lg border border-gray-300 dark:bg-[#161b22] dark:border-neutral-700 text-base sm:text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
           />
           <textarea
             name="message"
             required
             placeholder="Your Message"
             rows={5}
-            className="p-4 rounded-lg border border-gray-300 dark:bg-[#161b22] dark:border-neutral-700 text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
+            className="p-4 rounded-lg border border-gray-300 dark:bg-[#161b22] dark:border-neutral-700 text-base sm:text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 transition"
           />
           <button
             type="submit"
