@@ -6,21 +6,23 @@ const experiences = [
     title: "Founder • Rovo Studios",
     location: "New York, United States",
     date: "2024 – Present",
-    bullets: [
-      "Founded an indie studio for game and app development.",
-      "Led design, coding, and business strategy.",
-      "Shipped multiple prototypes and managed remote teams."
-    ]
+ bullets: [
+  "Founded an indie studio for game and app development.",
+  "Handled all design, coding, and business strategy independently.",
+  "Driven by a lifelong passion for games, started by building mobile games with plans to expand into PC and eventually console."
+]
+
   },
   {
     title: "Co-Founder / Full Stack Developer • SpotOn",
     location: "Remote",
     date: "2024 – Present",
     bullets: [
-      "Built a prototype app for real-time NYC parking using AI camera analysis.",
-      "Led feature development and collaborated on backend infrastructure.",
-      "Prepared for public launch and user testing."
-    ]
+  "Built a prototype app for real-time NYC parking using AI camera analysis.",
+  "Brainstormed product ideas and contributed creative solutions with the founding team.",
+  "Prepared for public launch and user testing."
+]
+
   },
   {
     title: "Frontend Developer • Tern Systems",
